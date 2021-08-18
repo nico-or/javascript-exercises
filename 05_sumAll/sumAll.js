@@ -1,6 +1,6 @@
-const sumAll = function(first,last) {
-    let sum = 0;
-    for (let i = first; i <= last; i++){
+const sumAll = function(a,b) {
+    let sum = 0
+    for (let i = Math.min(a,b); i <= Math.max(a,b); i++){
         sum += i
     }
     return sum
