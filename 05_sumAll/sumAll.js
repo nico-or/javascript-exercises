@@ -1,4 +1,7 @@
 const sumAll = function(a,b) {
+    if (typeof(a) != "number" || typeof(b) != "number"){
+        return "ERROR"
+    }
     if (Math.min(a,b) < 0){
         return "ERROR"
     }
