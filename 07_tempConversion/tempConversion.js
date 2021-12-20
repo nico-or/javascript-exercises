@@ -12,6 +12,7 @@ const ctof = function(tempC) {
   return tempF % 1 == 0 ? tempF : Number(tempF.toFixed(1))
 };
 
+// Do not edit below this line
 module.exports = {
   ftoc,
   ctof
