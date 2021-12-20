@@ -1,4 +1,5 @@
 const palindromes = function (string) {
+    string = filterLetters(string);
     return string == reverseString(string);
 };
 
@@ -20,6 +21,16 @@ function isUpper (char) {
 
 function isLetter (char) {
     return isLower(char) || isUpper(char);
+}
+
+function filterLetters (string) {
+    let filtered = "";
+    for (let character of string) {
+        if ( isLetter(character)) {
+            filtered += character;
+        }
+    }
+    return filtered
 }
 
 // Do not edit below this line
