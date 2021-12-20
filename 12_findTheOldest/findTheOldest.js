@@ -9,7 +9,12 @@ const findTheOldest = function(people) {
 };
 
 function getAge(person) {
-    return person.yearOfDeath - person.yearOfBirth;
+    if (!person.yearOfDeath){ 
+        let date = new Date;
+        return date.getFullYear() - person.yearOfBirth;
+    } else {
+        return person.yearOfDeath - person.yearOfBirth;
+    }
 }
 
 // Do not edit below this line
