@@ -14,12 +14,20 @@ const sum = function(array) {
   return sum;
 };
 
-const multiply = function() {
-
+const multiply = function(array) {
+  let product = 1;
+  for (let number of array) {
+    product *= number
+  }
+  return product;
 };
 
-const power = function() {
-	
+const power = function(base,exp) {
+	let product = 1;
+  for (let i = 0; i < exp; i++){
+    product *= base;
+  }
+  return product
 };
 
 const factorial = function() {
