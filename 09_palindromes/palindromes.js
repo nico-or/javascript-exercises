@@ -1,5 +1,5 @@
 const palindromes = function (string) {
-    string = filterLetters(string);
+    string = filterLetters(string).toLowerCase();
     return string == reverseString(string);
 };
 
