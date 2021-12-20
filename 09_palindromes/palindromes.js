@@ -1,5 +1,5 @@
-const palindromes = function () {
-
+const palindromes = function (string) {
+    return string == reverseString(string);
 };
 
 function reverseString(string) {
